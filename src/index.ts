@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_KEY as string);
 const app = new Hono();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://qr-pay-bun-frontend.vercel.app",
   })
 );
 // Endpoint to create a Stripe Checkout Session and generate a QR code
