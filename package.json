@@ -6,12 +6,15 @@
     "dev": "bun run --hot src/index.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/qrcode": "^1.5.5"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "hono": "^4.6.4",
     "qrcode": "^1.5.4",
     "stripe": "^17.2.0"
